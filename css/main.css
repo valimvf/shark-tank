@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #FFF;
+}
+
+.header {
+    background-color: #C8E6C9;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    color: #000;
+}
+.header div {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 0.75rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 100%;
+}
+
+.left {
+    background-color: #388E3C;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.right {
+    background-color: #b71c1c;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.bottom {
+    background-color: #757575;
+    height: calc(40% - 3rem);
+    padding: 2rem;
+}
