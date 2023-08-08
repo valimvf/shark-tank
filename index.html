@@ -5,73 +5,30 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div>Moneyvive - make money alive, grow them like they're your children (shark tank idea)</div>
+    <div class="header" onclick="reset();">
+        <div>Creative money</div>
+        <span>Marketing as entertainment</span>
+        <i class="bi bi-layout-split"></i>
     </div>
     <div class="main">
-        <div class="left">
-            <div>
-                You started a business
-            </div>
-            <div>
-                You need money to grow it
-            </div>
-            <div>
-                An investor could come to the rescue and help you scale
-            </div>
-            <button>Pitch</button>
-            <div class="features">
-                <span>Features:</span>
-                <ul>
-                    <li>
-                        Post your pitch: info about your business, fill your questions form
-                    </li>
-                    <li>
-                        Post your requirements: besides money you probably need mentorship
-                    </li>
-                    <li>
-                        Make short video for pitch, extra videos for answering specific set of questions
-                    </li>
-                    <li>
-                        Premium: make some info private, accesible only to investors (tbd)
-                    </li>
-                </ul>
-            </div>
+        <div class="left" id="left" onclick="selectScreen('left')">
+            <video autoplay muted loop>
+                <source src="img/test.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="right">
-            <div>
-                You got money
-            </div>
-            <div>
-                Your money is sitting, devaluating
-            </div>
-            <div>
-                You want to send your money to a bisness to be brought back to life
-            </div>
-            <button>Invest</button>
-            <div class="features">
-                <span>Features:</span>
-                <ul>
-                    <li>
-                        TBD: access on platform requires some sort of verification
-                    </li>
-                    <li>
-                        Browse: list of posts or short videos feed (maybe based on your budget that you can set)
-                    </li>
-                    <li>
-                        Posibility of crowd investing
-                    </li>
-                    <li>
-                        Premium: access to exclusive projects (with hidden info)
-                    </li>
-                </ul>
+        <div class="right" id="right" onclick="selectScreen('right')">
+            <div id="particles-js">
+                <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1070" height="939"></canvas>
             </div>
         </div>
     </div>
-    <div class="bottom">
+    <!-- <div class="bottom">
         <div>We offer - social networking (public platform with a list of projects and maybe public list of investors)</div>
         <div>We offer - (or at least should) legal support for any negociation/investment</div>
         <div>We offer - financial support (maybe some sort of commission for investments)</div>
@@ -92,7 +49,9 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 </body>
+
+
 
 </html>
