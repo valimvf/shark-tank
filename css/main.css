@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    font-family: Roboto;
 }
 
 body {
@@ -22,7 +23,8 @@ body {
 
 .header span {
     margin-left: 1rem;
-    padding-top: 0.75rem;
+    padding-top: 015px;
+    font-size: 13px;
 }
 
 .header i {
