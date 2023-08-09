@@ -44,7 +44,6 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     transition: width 0.5s ease-in-out;
 }
 
@@ -62,13 +61,21 @@ body {
     width: calc(100% - 100px);
 }
 
-.left video {
-    position: absolute;
-    margin-top: 3rem;
-    height: calc(100% - 3rem);
+.left .video-container {
+    height: calc(100%);
     top: 0;
     left: 0;
+    padding: 2rem;
     opacity: 0.5;
+    position: relative;
+    overflow: hidden;
+}
+
+.left video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .right {
